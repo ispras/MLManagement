@@ -1,3 +1,3 @@
 # mlmanagement
 
-implementation of model pattern, dataset
+Python SDK for MLManagement platform
