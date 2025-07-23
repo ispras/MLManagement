@@ -1,0 +1,7 @@
+name: my_first_data
+dependencies:
+- python
+- pip
+- pip:
+  - torch==2.4.0
+  - torchvision==0.19.0

@@ -1,0 +1,1 @@
+{'single': [{'pattern': 'GradientModel','docs_hint': '....'}, {'pattern': 'Model','docs_hint':'....'}, {'pattern': 'EvaluatableModel','docs_hint':'....'}]}

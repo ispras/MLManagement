@@ -1,0 +1,6 @@
+name: your_name
+dependencies:
+- python
+- pip
+- pip:
+  - your_dependencies

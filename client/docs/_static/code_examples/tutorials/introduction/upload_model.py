@@ -1,0 +1,10 @@
+from ML_management.mlmanagement import set_mlm_credentials, set_server_url, log_model_src
+
+set_server_url("SERVER_URL")
+set_mlm_credentials(login="login", password="password")
+
+log_model_src(
+    model_path="model",
+    registered_name="model_name",
+    description="model description",
+)

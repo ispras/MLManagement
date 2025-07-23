@@ -1,0 +1,30 @@
+from ML_management.sdk import job_by_name
+
+print(job_by_name(train_job).status)
+>>> PLANNED
+
+from ML_management.sdk import get_logs
+
+get_logs(train_job)
+>>> From https://github.com/pyenv/pyenv
+>>>    3ff54e89..9ecd803b  master     -> origin/master
+>>>  * [new tag]           v2.4.10    -> v2.4.10
+>>>  * [new tag]           1.2.24            -> 1.2.24
+>>>  * [new tag]           1.2.24.1          -> 1.2.24.1
+>>>  * [new tag]           1.2.25            -> 1.2.25
+>>> ...
+
+from ML_management.sdk import available_metrics
+
+available_metrics(train_job)
+>>> ['Train Loss', 'Train Accuracy', 'Validation Accuracy', 'lr']
+
+from ML_management.sdk import job_metric_by_name
+
+job_metric_by_name(train_job)
+
+from ML_management.sdk import metric_history
+
+metric_history(train_job, 'Train Accuracy')
+>>> ([0.0, 32.832, 66.224, 99.207, 131.558],
+     [86.725, 95.585, 97.96000000000001, 98.61333333333333, 98.905])

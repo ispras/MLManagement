@@ -1,0 +1,68 @@
+Executor json-schema:
+{
+  "properties": {
+    "eps": {
+      "type": "number",
+      "default": 0.01568627450980392
+    },
+    "std": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "mean": {
+      "type": "array",
+      "items": {
+        "type": "number"
+      },
+      "default": [
+        0.5,
+        0.5,
+        0.5
+      ]
+    },
+    "shuffle": {
+      "type": "boolean",
+      "default": false
+    },
+    "eps_step": {
+      "type": "number",
+      "default": 0.00392156862745098
+    },
+    "max_iter": {
+      "type": "integer",
+      "default": 100
+    },
+    "batch_size": {
+      "type": "integer",
+      "default": 64
+    },
+    "bucket_name": {
+      "type": "string"
+    },
+    "num_workers": {
+      "type": "integer",
+      "default": 0
+    },
+    "num_images_to_save": {
+      "type": "integer",
+      "default": 5
+    },
+    "example_bucket_name": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "default": null
+    }
+  },
+  "required": [
+    "bucket_name"
+  ]
+}

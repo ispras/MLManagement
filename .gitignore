@@ -1,0 +1,8 @@
+client/test/
+client/dist/
+client/tests/downloaded_data/
+client/ml_management.egg-info/
+client/docs/_static/code_examples/tutorials/base_scenario/mnist/
+client/docs/_static/code_examples/tutorials/trust_scenario/model/artifacts/
+client/docs/_build/
+client/build/
